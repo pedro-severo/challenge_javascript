@@ -1,10 +1,12 @@
 import React from 'react';
+import { DashboardPageWrapper } from './styled';
+import NavBar from '../../components/NavBar';
 
 const DashboardPage = () => {
     return (
-        <div>
-            DashboardPage
-        </div>
+        <DashboardPageWrapper>
+            <NavBar />
+        </DashboardPageWrapper>
     );
 };
 
