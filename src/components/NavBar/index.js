@@ -26,7 +26,9 @@ const NavBar = props => {
             >
                 Logout
             </NavButton>
-            <NavButton>
+            <NavButton
+                onClick={props.handleClickLoans}
+            >
                 Empréstimos
             </NavButton>
         </NavBarWrapper>
