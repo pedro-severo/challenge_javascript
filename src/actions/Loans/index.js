@@ -10,12 +10,13 @@ export const setLoans = (loansList) => {
     };
 };
 
-export const getLoans = () => async () => {
+export const getLoans = () => async (dispatch) => {
     try {
         const response = await axios.get(
             baseUrl
         );
-        console.log(response.data);
+        console.log(response.data)
+        dispatch(setLoans(response.data))
     } catch (e) {
         console.log("Error", e.message);
     };
